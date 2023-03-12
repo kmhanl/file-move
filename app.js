@@ -20,7 +20,7 @@ fs.readdir("./test", (err, files) => {
                 return false;
             }
         });
-      } else if(item.indexOf('png') > -1 || item.indexOf('jpg') > -1) {
+      } else if(item.indexOf('png') > -1 || item.indexOf('jpg') > -1 || item.indexOf('aae') > -1) {
         if(item.indexOf('_E') > -1) {
             fs.rename('./test/'+item, './test/duplicated/'+item,(err) => {
                 if (err) {
